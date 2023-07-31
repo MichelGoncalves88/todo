@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@700&display=swap');
+
+body {
+    margin:0;
+    background-color: #333;
+    box-sizing: border-box;
+    font-family: Lexend Exa;
+}
+
+header {
+    height: 62px;
+
+    padding: 10px 90px;
+
+    border-radius: 0px 0px 20px 20px;
+    background: #000;
+}
+
+header #header-logo {
+    height: 100%;
+}
+
+main {
+    margin-top: 40px;
+    padding: 0px 142px;
+
+    display: flex;
+    align-items: flex-start;
+    gap: 138px;
+}
+
+#input-date {
+    box-sizing: border-box;
+    width: 332px;
+    height: 62px;
+
+    padding: 20px;
+
+    border: none;
+    border-radius: 10px;
+    background: #000;
+
+    font-family: Lexend Exa;
+    font-weight: 700;
+    font-size: 28px;
+    color: #00D93D
+    
+}
+
+#input-date::-webkit-calendar-picker-indicator{
+    background-color: #00D93D;
+    padding: 2px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+}
+#date-string {
+    width: 332px;
+
+    margin-top: 20px;
+
+    color: #FFF;
+    font-family: Lexend Exa;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1.6px;
+    text-align: center;
+}
+#graph-base {
+    box-sizing: border-box;
+    width: 332px;
+    height: 332px;
+    padding: 22px;
+
+    border-radius: 50%;
+    
+    background: 
+        linear-gradient(to right, #000 50%, transparent 50%),
+        linear-gradient(90deg, #000 50%, #00D93D 50%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#graph-center {
+    width: 100%;
+    height: 100%;
+
+    border-radius: 50%;
+    background-color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#graph-percent {
+    color: #00D93D;
+    text-shadow: 
+    2px 4px 4px #1A5E14, 
+    -2px -2px 0 #000,  
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+     2px 2px 0 #000;;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -10px;
+    
+}
+
+#right {
+    width: 100%;
+    flex: 1;
+}
+#task-list {
+    display: flex;
+    width: 100%;
+    max-width: 684px;
+    padding: 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+
+    border-radius: 20px;
+    background: #000;
+}
+
+#task-list-button {
+    display: flex;
+    padding-bottom: 0px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+}
+#task-list-button #add-task-button {
+    height: 40px;
+    padding: 10px;
+    border-radius: 4px;
+    background: #00D93D;
+    color: #FFF;
+    font-family: Lexend Exa;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: -1.6px;
+    border: none;
+}
+#add-task-icon,
+.task-status,
+.task-remove {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+}
+
+
+.task-text {
+    width: 100%;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    flex: 1 0 0;
+    overflow: hidden;
+    color: #FFF;
+    text-overflow: ellipsis;
+    font-family: Lexend Exa;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1.6px;
+
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    padding: 2px 6px;
+}
+
+
+@media(max-width: 1180px) {
+    main {
+        margin-top: 20px;
+        padding: 0px 20px;
+
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #right {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media(max-width: 768px) {
+    #left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #input-date {
+        width: 220px;
+        height: 42px;
+    
+        padding: 12px;
+        font-size: 20px;
+        
+    }
+
+    #graph-base {
+        width: 220px;
+        height: 220px;
+        padding: 14px;
+    }
+    #graph-percent {
+        font-size: 64px;
+        
+    }
+}
+
+@media(max-width: 426px) {
+    #graph-base {
+        width: 164px;
+        height: 164px;
+        padding: 11px;
+    }
+    #graph-percent {
+        color: #00D93D;
+        text-shadow: 
+        1px 2px 2px #1A5E14, 
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+         1px 1px 0 #000;;
+         font-size: 50px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: -6px;
+        
+    }
+    #graph-percent {
+        
+        
+    }
+}
+

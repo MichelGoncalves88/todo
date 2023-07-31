@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>TO DO</title>
+</head>
+<body>
+    <header>
+        <img id="header-logo" src="assets/Logo.png" alt="To DO list Logo">
+    </header>
+
+    <main>
+        <div id="left">
+            <input id="input-date" type="date" />
+            <p id="date-string">Quarta-feira, 26 de julho de 2023</p>
+
+            <div id="graph-base">
+                <div id="graph-center">
+                    <span id="graph-percent">
+                        0%
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div id="task-model" class="task" style="display: none">
+            <button class="task-status">
+                <img  src="assets/checked.svg">
+            </button>
+            
+            <input type="text" class="task-text" value="Instalar o servidor" readonly/>
+
+            <button class="task-remove">
+                <img src="assets/remove.svg">
+            </button>
+        </div>
+        
+
+        <div id="right">
+            <div id="task-list">
+                <div id="task-list-button">
+                    <button id="add-task-button">Adicionar Tarefa</button>
+                </div>
+
+                <button id="add-task-icon"><img src="assets/add.svg" alt="add-task"></button>
+
+                
+            </div>
+        </div>
+
+       
+    </main>
+    <script src="graph.js"></script>
+    <script src="tasks.js"></script>
+    
+</body>
+</html>
